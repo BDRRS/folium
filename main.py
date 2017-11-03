@@ -175,5 +175,15 @@ folium.Marker([-3.022564, 104.834182], popup='TANGSIS 77 (KENTANG SOSIS)').add_t
 folium.Marker([-3.024153, 104.832388], popup='Bengkel Thoriq').add_to(map_1)
 folium.Marker([-3.029768, 104.832593], popup='SMP Putra Maju Sungai Pinang').add_to(map_1)
 folium.Marker([-3.030701, 104.835726], popup='Pelabuhan Goro RR').add_to(map_1)
+folium.Marker([-2.931369, 104.785304], popup= 'Taman Pendidikan Al-Quran (TPA/TPQ)').add_to(map_1)
+folium.Marker([-2.931340, 104.785612], popup= 'warung bu may').add_to(map_1)
+folium.Marker([-2.930529, 104.784768], popup= 'Sekolah Dasar Negeri 118 Palembang').add_to(map_1)
+folium.Marker([-2.930152, 104.785759], popup= 'Masjid Al Falah').add_to(map_1)
+folium.Marker([-2.930389, 104.786303], popup= 'Pendekar Ilusi').add_to(map_1)
+folium.Marker([-2.930094, 104.786577], popup= 'Komplek Griya Musi Permai').add_to(map_1)
+folium.Marker([-2.930150, 104.785749], popup= 'Masjid Al Falah').add_to(map_1)
+folium.Marker([-2.931559, 104.783898], popup= 'rumah cafe bu wahab').add_to(map_1)
+folium.Marker([-2.931600, 104.783603], popup= 'Mitra Kreasi').add_to(map_1)
+folium.Marker([-2.931479, 104.783665], popup= 'Milan Ac').add_to(map_1)
 
 map_1

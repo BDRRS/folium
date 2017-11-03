@@ -165,4 +165,15 @@ folium.Marker([-2.885058, 104.703484], popup='Depot Air Minum Arinda').add_to(ma
 folium.Marker([-2.884086, 104.701634], popup='Masjid Miftahul Anwar').add_to(map_1)
 folium.Marker([-2.883036, 104.700241], popup='Sate Padang Uni Yen').add_to(map_1)
 folium.Marker([-2.883745, 104.699899], popup='Buah Segar Yahya').add_to(map_1)
+folium.Marker([-3.005743, 104.818049], popup='Rumah Sakit Ibu Dan Anak Marissa').add_to(map_1)
+folium.Marker([-3.011374, 104.820264], popup='Rumah Makan Budi Mulya').add_to(map_1)
+folium.Marker([-3.017137, 104.826468], popup='Depot Kayu Zahara Jaya').add_to(map_1)
+folium.Marker([-3.018964, 104.827954], popup='TiKi Gerai Sungai Pinang').add_to(map_1)
+folium.Marker([-3.019478, 104.830572], popup='Masjid Pajrul Iman').add_to(map_1)
+folium.Marker([-3.018471, 104.832605], popup='Musholla NURUL HIDAYAH').add_to(map_1)
+folium.Marker([-3.022564, 104.834182], popup='TANGSIS 77 (KENTANG SOSIS)').add_to(map_1)
+folium.Marker([-3.024153, 104.832388], popup='Bengkel Thoriq').add_to(map_1)
+folium.Marker([-3.029768, 104.832593], popup='SMP Putra Maju Sungai Pinang').add_to(map_1)
+folium.Marker([-3.030701, 104.835726], popup='Pelabuhan Goro RR').add_to(map_1)
+
 map_1

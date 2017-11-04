@@ -235,6 +235,18 @@ folium.Marker([-2.931490, 104.783735], popup= 'Apotek Sultan').add_to(map_1)
 folium.Marker([-2.930442, 104.782428], popup= 'Seblak & Jasuke Mak Mega').add_to(map_1)
 folium.Marker([-2.931131, 104.781986], popup= 'Dyskahijabpalembang').add_to(map_1)
 folium.Marker([-2.931238, 104.781820], popup= 'Martabak "Telor DOA IBU').add_to(map_1)
+folium.Marker([-2.964781, 104.720233], popup= 'Seblak Nampol').add_to(map_1)
+folium.Marker([-2.973567, 104.731659], popup= 'Dinas Kebudayaan dan Pariwisata Provinsi Sumatera Selatan').add_to(map_1)
+folium.Marker([-2.976042, 104.738343], popup= 'TVRI Sumatera Selatan').add_to(map_1)
+folium.Marker([-2.975945, 104.741647], popup= 'Palembang Square Mall').add_to(map_1)
+folium.Marker([-2.984983, 104.753653], popup= 'Palembang Indah Mall').add_to(map_1)
+folium.Marker([-2.983711, 104.757764], popup= 'Internasiona Plaza').add_to(map_1)
+folium.Marker([-2.987786, 104.760178], popup= 'Masjid Agung Palembang').add_to(map_1)
+folium.Marker([-2.989961, 104.759967], popup= 'Benteng Kuto Besak').add_to(map_1)
+folium.Marker([-2.976174, 104.753586], popup= 'Rk Charitas').add_to(map_1)
+folium.Marker([-2.975558, 104.754466], popup= 'Kantor Perwakilan Bank Indonesia Provinsi Sumatera Selatan').add_to(map_1)
+folium.Marker([-2.970104, 104.750142], popup= 'Markas Kodam II Sriwijaya').add_to(map_1)
+folium.Marker([-2.961108, 104.739859], popup= 'KANTOR POLDA SUMATERA SELATAN').add_to(map_1)
 
 map_1
 

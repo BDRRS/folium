@@ -195,5 +195,15 @@ folium.Marker([-2.969859, 104.713237], popup= 'PT. Swarna Cinde Raya').add_to(ma
 folium.Marker([-2.971006, 104.712518], popup= 'PT. Intraco Penta Tbk').add_to(map_1)
 folium.Marker([-2.975849, 104.723580], popup= 'Balai Diklat Keagamaan').add_to(map_1)
 folium.Marker([-2.974167, 104.726541], popup= 'Rumah Makan Sederhana').add_to(map_1)
+folium.Marker([-2.967320, 104.764249], popup= 'SMA Xaverius 1').add_to(map_1)
+folium.Marker([-2.966559, 104.765789], popup= 'Catholic University Musi-Caritas').add_to(map_1)
+folium.Marker([-2.969013, 104.763621], popup= 'RSIA Tiara Fatrin').add_to(map_1)
+folium.Marker([-2.970995, 104.764651], popup= 'Grand Zuri Hotel').add_to(map_1)
+folium.Marker([-2.974424, 104.765263], popup= 'Rajawali Grand Ballroom').add_to(map_1)
+folium.Marker([-2.975634, 104.766647], popup= 'CGV').add_to(map_1)
+folium.Marker([-2.979931, 104.764834], popup= 'Evo Pet Shop Dempo - Palembang').add_to(map_1)
+folium.Marker([-2.979127, 104.764941], popup= 'V-Gen Mobile Servis Center').add_to(map_1)
+folium.Marker([-2.985658, 104.767092], popup= 'PT. Indoforma Global Medika').add_to(map_1)
+folium.Marker([-2.990158, 104.763337], popup= 'Wisata Kuliner Tepian Sungai Musi').add_to(map_1)
 
 map_1

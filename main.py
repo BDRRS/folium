@@ -205,5 +205,15 @@ folium.Marker([-2.979931, 104.764834], popup= 'Evo Pet Shop Dempo - Palembang').
 folium.Marker([-2.979127, 104.764941], popup= 'V-Gen Mobile Servis Center').add_to(map_1)
 folium.Marker([-2.985658, 104.767092], popup= 'PT. Indoforma Global Medika').add_to(map_1)
 folium.Marker([-2.990158, 104.763337], popup= 'Wisata Kuliner Tepian Sungai Musi').add_to(map_1)
+folium.Marker([-2.882186, 104.698873], popup='RSH Griya Marga Jaya').add_to(map_1)
+folium.Marker([-2.882502, 104.700320], popup='Mushala Masjid Lama').add_to(map_1)
+folium.Marker([-2.881502, 104.701310], popup='Darussofa Palembang').add_to(map_1)
+folium.Marker([-2.884774, 104.698883], popup='Masjid Komp Dirgantara Permai BTN').add_to(map_1)
+folium.Marker([-2.884041, 104.696551], popup='Masjid Jami Al-Jihad').add_to(map_1)
+folium.Marker([-2.879540, 104.680057], popup='Deninteldan II/SWJ').add_to(map_1)
+folium.Marker([-2.882488, 104.682333], popup='Depi Sano.CV').add_to(map_1)
+folium.Marker([-2.881910, 104.682947], popup='BC HNI Palembang 3').add_to(map_1)
+folium.Marker([-2.886376, 104.680278], popup='Salma Park Residence').add_to(map_1)
+folium.Marker([-2.885274, 104.687953], popup='Model Sumiah').add_to(map_1)
 
 map_1

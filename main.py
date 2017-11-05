@@ -247,16 +247,18 @@ folium.Marker([-2.976174, 104.753586], popup= 'Rk Charitas').add_to(map_1)
 folium.Marker([-2.975558, 104.754466], popup= 'Kantor Perwakilan Bank Indonesia Provinsi Sumatera Selatan').add_to(map_1)
 folium.Marker([-2.970104, 104.750142], popup= 'Markas Kodam II Sriwijaya').add_to(map_1)
 folium.Marker([-2.961108, 104.739859], popup= 'KANTOR POLDA SUMATERA SELATAN').add_to(map_1)
-folium.Marker([-3.009434, 104.816477], popup='Warung Dony').add_to(map_1)
-folium.Marker([-3.008844, 104.819274], popup='Friend Education Center').add_to(map_1)
-folium.Marker([-3.010416, 104.820575], popup='Stasiun KM 3 Plaju').add_to(map_1)
-folium.Marker([-3.009763, 104.820001], popup='Pangkas Rambut Lelaki').add_to(map_1)
-folium.Marker([-3.008691, 104.825099], popup='Bazarzam com').add_to(map_1)
-folium.Marker([-3.006069, 104.823587], popup='Politeknik Akamigas Palembang').add_to(map_1)
-folium.Marker([-3.006511, 104.826276], popup='Komperta Plaju').add_to(map_1)
-folium.Marker([-3.013417, 104.821872], popup='Odon Photo').add_to(map_1)
-folium.Marker([-3.013031, 104.821626], popup='4G Cell Palembang').add_to(map_1)
-folium.Marker([-3.018045, 104.829039], popup='Penjahit Tuminah').add_to(map_1)
+
+
+folium.Marker([-3.030952, 104.798970], popup='Multipurpose Building Palmera).add_to(map_1)
+folium.Marker([-3.059925, 104.817622], popup='Meritai Anggrek Indah').add_to(map_1)
+folium.Marker([-3.062753, 104.818716], popup='Home Goods Store').add_to(map_1)
+folium.Marker([-3.084710, 104.813345], popup='Masjid Al-Khoiriyah').add_to(map_1)
+folium.Marker([-3.097138, 104.793004], popup='Majelis Talim Nurul Kawakib').add_to(map_1)
+folium.Marker([-3.111450, 104.761933], popup='Warung Evang').add_to(map_1)
+folium.Marker([-3.192116, 104.744920], popup='SMAN 1 Pemulutan Barat').add_to(map_1)
+folium.Marker([-3.256144, 104.646985], popup='RSUD Kabupaten Ogan Ilir').add_to(map_1)
+folium.Marker([-3.020916, 104.808284], popup='Sports Complex').add_to(map_1)
+folium.Marker([-3.011381, 104.820301], popup='Rumah Makan Budi Mulya').add_to(map_1)
 
 map_1
 

@@ -1,4 +1,4 @@
-#!/bin/python
+
 
 import folium
 def inisiasi(long,lat):

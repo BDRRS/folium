@@ -250,7 +250,7 @@ folium.Marker([-2.887532, 104.689052], popup='Duta Mandiri Motor').add_to(map_1)
 folium.Marker([-2.888039, 104.688600], popup='Apotek Bersama 2').add_to(map_1)
 folium.Marker([-2.888279, 104.688318], popup='Nasi Goreng Kopral Dedy').add_to(map_1)
 folium.Marker([-2.888146, 104.687953], popup='Griya Duta Lestari').add_to(map_1)
-folium.Marker([-2.891613, 104.697712], popup='Ronny's Cafe').add_to(map_1)
+folium.Marker([-2.891613, 104.697712], popup='Ronny Cafe').add_to(map_1)
 folium.Marker([-2.908609, 104.713773], popup='Masjid Babussalam').add_to(map_1)
 
 

@@ -1,7 +1,36 @@
+#!/bin/python
+
 import folium
-map_1 = folium.Map(location=[-2.9521793,104.7499501],
-                   zoom_start=12,
-                   tiles='Stamen Terrain')
+def inisiasi(long,lat):
+	map_1 = folium.Map(
+    location=[long,lat],
+    zoom_start=12,
+    tiles='Stamen Terrain')
+	return map_1
+	
+def hitam(long,lat):
+	c = folium.Map(
+    location=[long,lat],
+    zoom_start=12,
+    tiles='Stamen Toner')	
+	return c
+
+def masukkin(apa,ini):
+	d = folium.Map(
+	location=[apa,ini],
+	zoom_start=12,
+    tiles='Stamen Terrain')	
+	return d
+	
+def simpan(anu,gede):
+	anu.save(gede)
+
+d = masukkin(-2.9521793,104.7499501)
+c = hitam(-2.9521793,104.7499501)
+map_1 = inisiasi(-2.9521793,104.7499501)
+tooltip = 'Click me!'
+
+
 folium.Marker([-2.952245, 104.758104], popup='pecel lele').add_to(map_1)
 folium.Marker([-2.958722, 104.766448], popup='palembang golf club').add_to(map_1)
 folium.Marker([-2.958754, 104.770375], popup='kopitiam').add_to(map_1)
@@ -156,8 +185,6 @@ folium.Marker([-3.019759, 104.781980], popup='Bengkel Mobil Fikri').add_to(map_1
 folium.Marker([-3.020135, 104.782377], popup='Toko Brama').add_to(map_1)
 folium.Marker([-3.020444, 104.782397], popup='Ardaza').add_to(map_1)
 folium.Marker([-2.880762, 104.703659], popup='Pesantren Zaadul Maad').add_to(map_1)
-folium.Marker([-2.881205, 104.703606], popup='Masjid Sulaiman Al-Quraida').add_to(map_1)
-folium.Marker([-2.882642, 104.703353], popup='Farhan Kreasi Palembang').add_to(map_1)
 folium.Marker([-2.883550, 104.703829], popup='Toko Siti Digital 2 (cannon)').add_to(map_1)
 folium.Marker([-2.884353, 104.705066], popup='Bengkel Las Sriwijaya').add_to(map_1)
 folium.Marker([-2.884375, 104.705088], popup='Toko Besi dan Bahan Sriwijaya').add_to(map_1)
@@ -195,20 +222,6 @@ folium.Marker([-2.969859, 104.713237], popup= 'PT. Swarna Cinde Raya').add_to(ma
 folium.Marker([-2.971006, 104.712518], popup= 'PT. Intraco Penta Tbk').add_to(map_1)
 folium.Marker([-2.975849, 104.723580], popup= 'Balai Diklat Keagamaan').add_to(map_1)
 folium.Marker([-2.974167, 104.726541], popup= 'Rumah Makan Sederhana').add_to(map_1)
-folium.Marker([-2.967320, 104.764249], popup= 'SMA Xaverius 1').add_to(map_1)
-folium.Marker([-2.966559, 104.765789], popup= 'Catholic University Musi-Caritas').add_to(map_1)
-folium.Marker([-2.969013, 104.763621], popup= 'RSIA Tiara Fatrin').add_to(map_1)
-folium.Marker([-2.970995, 104.764651], popup= 'Grand Zuri Hotel').add_to(map_1)
-folium.Marker([-2.974424, 104.765263], popup= 'Rajawali Grand Ballroom').add_to(map_1)
-folium.Marker([-2.975634, 104.766647], popup= 'CGV').add_to(map_1)
-folium.Marker([-2.979931, 104.764834], popup= 'Evo Pet Shop Dempo - Palembang').add_to(map_1)
-folium.Marker([-2.979127, 104.764941], popup= 'V-Gen Mobile Servis Center').add_to(map_1)
-folium.Marker([-2.985658, 104.767092], popup= 'PT. Indoforma Global Medika').add_to(map_1)
-folium.Marker([-2.990158, 104.763337], popup= 'Wisata Kuliner Tepian Sungai Musi').add_to(map_1)
-folium.Marker([-2.882186, 104.698873], popup='RSH Griya Marga Jaya').add_to(map_1)
-folium.Marker([-2.882502, 104.700320], popup='Mushala Masjid Lama').add_to(map_1)
-folium.Marker([-2.881502, 104.701310], popup='Darussofa Palembang').add_to(map_1)
-folium.Marker([-2.884774, 104.698883], popup='Masjid Komp Dirgantara Permai BTN').add_to(map_1)
 folium.Marker([-2.884041, 104.696551], popup='Masjid Jami Al-Jihad').add_to(map_1)
 folium.Marker([-2.879540, 104.680057], popup='Deninteldan II/SWJ').add_to(map_1)
 folium.Marker([-2.882488, 104.682333], popup='Depi Sano.CV').add_to(map_1)
@@ -228,20 +241,6 @@ folium.Marker([-3.046930, 104.793744], popup='Kolam Pemancingan Alam').add_to(ma
 folium.Marker([-2.930726, 104.782718], popup= 'Yayasan Islam Akbar').add_to(map_1)
 folium.Marker([-2.930925, 104.783126], popup= 'JAHITAN UNI MAMA').add_to(map_1)
 folium.Marker([-2.931206, 104.782927], popup= 'RPM Sako').add_to(map_1)
-folium.Marker([-2.930646, 104.783155], popup= 'Ayumi Petshop').add_to(map_1)
-folium.Marker([-2.931187, 104.783700], popup= 'BAKSO DADI MULYO PERUMNAS').add_to(map_1)
-folium.Marker([-2.930801, 104.783346], popup= 'Western Union').add_to(map_1)
-folium.Marker([-2.931490, 104.783735], popup= 'Apotek Sultan').add_to(map_1)
-folium.Marker([-2.930442, 104.782428], popup= 'Seblak & Jasuke Mak Mega').add_to(map_1)
-folium.Marker([-2.931131, 104.781986], popup= 'Dyskahijabpalembang').add_to(map_1)
-folium.Marker([-2.931238, 104.781820], popup= 'Martabak "Telor DOA IBU').add_to(map_1)
-folium.Marker([-2.964781, 104.720233], popup= 'Seblak Nampol').add_to(map_1)
-folium.Marker([-2.973567, 104.731659], popup= 'Dinas Kebudayaan dan Pariwisata Provinsi Sumatera Selatan').add_to(map_1)
-folium.Marker([-2.976042, 104.738343], popup= 'TVRI Sumatera Selatan').add_to(map_1)
-folium.Marker([-2.975945, 104.741647], popup= 'Palembang Square Mall').add_to(map_1)
-folium.Marker([-2.984983, 104.753653], popup= 'Palembang Indah Mall').add_to(map_1)
-folium.Marker([-2.983711, 104.757764], popup= 'Internasiona Plaza').add_to(map_1)
-folium.Marker([-2.987786, 104.760178], popup= 'Masjid Agung Palembang').add_to(map_1)
 folium.Marker([-2.989961, 104.759967], popup= 'Benteng Kuto Besak').add_to(map_1)
 folium.Marker([-2.976174, 104.753586], popup= 'Rk Charitas').add_to(map_1)
 folium.Marker([-2.975558, 104.754466], popup= 'Kantor Perwakilan Bank Indonesia Provinsi Sumatera Selatan').add_to(map_1)
@@ -253,83 +252,292 @@ folium.Marker([-2.888279, 104.688318], popup='Nasi Goreng Kopral Dedy').add_to(m
 folium.Marker([-2.888146, 104.687953], popup='Griya Duta Lestari').add_to(map_1)
 folium.Marker([-2.891613, 104.697712], popup='Ronny's Cafe').add_to(map_1)
 folium.Marker([-2.908609, 104.713773], popup='Masjid Babussalam').add_to(map_1)
-folium.Marker([-2.908601, 104.714681], popup='GARAGES99').add_to(map_1)
-folium.Marker([-2.910807, 104.714196], popup='SUKRO').add_to(map_1)
-folium.Marker([-2.911560, 104.713296], popup='Lamun Ombak Cabang Padang').add_to(map_1)
-folium.Marker([-2.911898, 104.713108], popup='Kaos Wong Kito').add_to(map_1)
-folium.Marker([-3.030952, 104.798970], popup='Multipurpose Building Palmera').add_to(map_1)
-folium.Marker([-3.059925, 104.817622], popup='Meritai Anggrek Indah').add_to(map_1)
-folium.Marker([-3.062753, 104.818716], popup='Home Goods Store').add_to(map_1)
-folium.Marker([-3.084710, 104.813345], popup='Masjid Al-Khoiriyah').add_to(map_1)
-folium.Marker([-3.097138, 104.793004], popup='Majelis Talim Nurul Kawakib').add_to(map_1)
-folium.Marker([-3.111450, 104.761933], popup='Warung Evang').add_to(map_1)
-folium.Marker([-3.192116, 104.744920], popup='SMAN 1 Pemulutan Barat').add_to(map_1)
-folium.Marker([-3.256144, 104.646985], popup='RSUD Kabupaten Ogan Ilir').add_to(map_1)
-folium.Marker([-3.020916, 104.808284], popup='Sports Complex').add_to(map_1)
-folium.Marker([-3.011381, 104.820301], popup='Rumah Makan Budi Mulya').add_to(map_1)
 
+
+
+folium.RegularPolygonMarker(
+    [-3.011381, 104.820301],
+    popup='Rumah Makan Budi Mulya',
+    fill_color='#132b5e',
+    number_of_sides=3,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.020916, 104.808284],
+    popup='Sports Complex',
+    fill_color='#45647d',
+    number_of_sides=4,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.256144, 104.646985],
+    popup='RSUD Kabupaten Ogan Ilir',
+    fill_color='#769d96',
+    number_of_sides=6,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.192116, 104.744920],
+    popup='SMAN 1 Pemulutan Barat',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.111450, 104.761933],
+    popup='Warung Evang',
+    fill_color='#132b5e',
+    number_of_sides=3,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.097138, 104.793004],
+    popup='Majelis Talim Nurul Kawakib',
+    fill_color='#45647d',
+    number_of_sides=4,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.084710, 104.813345],
+    popup='Masjid Al-Khoiriyah',
+    fill_color='#769d96',
+    number_of_sides=6,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.908601, 104.714681],
+    popup='GARAGES99',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.910807, 104.714196],
+    popup='SUKRO',
+    fill_color='#769d96',
+    number_of_sides=6,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.911560, 104.713296],
+    popup='Lamun Ombak Cabang Padang',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.911898, 104.713108],
+    popup='Kaos Wong Kito',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.030952, 104.798970],
+    popup='Multipurpose Building Palmera',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.059925, 104.817622],
+    popup='Meritai Anggrek Indah',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-3.062753, 104.818716],
+    popup='Home Goods Store',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.987786, 104.760178],
+    popup='Masjid Agung Palembang',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.983711, 104.757764],
+    popup='Internasiona Plaza',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.984983, 104.753653],
+    popup='Palembang Indah Mall',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.975945, 104.741647],
+    popup='Palembang Square Mall',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.975945, 104.741647],
+    popup='Palembang Square Mall',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.976042, 104.738343],
+    popup='TVRI Sumatera Selatan',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.973567, 104.731659],
+    popup='Dinas Kebudayaan dan Pariwisata Provinsi Sumatera Selatan',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-20964781, 104.720233],
+    popup='Seblak Nampol',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.931238, 104.781820],
+    popup='Martabak "Telor DOA IBU"',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
+folium.RegularPolygonMarker(
+    [-2.931131, 104.781986],
+    popup='Dyska hijab palembang',
+    fill_color='#769d96',
+    number_of_sides=8,
+    radius=10
+    ).add_to(map_1)
 map_1
 
-Fungsi Fungsi ;
-# Variabel global untuk menyimpan data Buku
-buku = []
-
-
-# fungsi untuk menampilkan semua data
-def show_data():
-    if len(buku) <= 0:
-        print "BELUM ADA DATA"
-    else:
-        for indeks in range(len(buku)):
-            print "[%d] %s" % (indeks, buku[indeks])
-
-
-# fungsi untuk menambah data
-def insert_data():
-    buku_baru = raw_input("Judul Buku: ")
-    buku.append(buku_baru)
-
-# fungsi untuk edit data
-def edit_data():
-	show_data()
-	indeks = input("Inputkan ID buku: ")
-	if(indeks > len(buku)):
-		print "ID salah"
-	else:
-		judul_baru = raw_input("Judul baru: ")
-		buku[indeks] = judul_baru
-
-# fungsi untuk menhapus data
-def delete_data():
-	show_data()
-	iindeksd = input("Inputkan ID buku: ")
-	if(indeks > len(buku)):
-		print "ID salah"
-	else:
-		buku.remove(buku[indeks])
-
-# fungsi untuk menampilkan menu
-def show_menu():
-	print "\n"
-	print "----------- MENU ----------"
-	print "[1] Show Data"
-	print "[2] Insert Data"
-	print "[3] Edit Data"
-	print "[4] Delete Data"
-	print "[5] Exit"
 	
-	menu = input("PILIH MENU> ")
-	print "\n"
+folium.Circle(
+    radius=100,
+    location=[-2.930442, 104.782428],
+    popup='Seblak & Jasuke Mak Mega',
+    color='crimson',
+    fill=False,
+).add_to(c)
+c
 
-	if menu == 1:
-		show_data()
-	elif menu == 2:
-		insert_data()
-	elif menu == 3:
-		edit_data()
-	elif menu == 4:
-		delete_data()
-	elif menu == 5:
-		exit()
-	else:
-		print "Salah pilih!"
+folium.Marker(
+    location=[-2.930646, 104.783155],
+    popup='Ayumi Petshop',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.931187, 104.783700],
+    popup='BAKSO DADI MULYO PERUMNAS',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.931490, 104.783735],
+    popup='Apotek Sultan',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.930801, 104.783346],
+    popup='Western Union',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.884774, 104.698883],
+    popup='Masjid Komp Dirgantara Permai BTN',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.881502, 104.701310],
+    popup='Darussofa Palembang',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.882502, 104.700320],
+    popup='Mushala Masjid Lama',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.882186, 104.698873],
+    popup='RSH Griya Marga Jaya',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.990158, 104.763337],
+    popup='Wisata Kuliner Tepian Sungai Musi',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.985658, 104.767092],
+    popup='PT. Indoforma Global Medika',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.979127, 104.764941],
+    popup='V-Gen Mobile Servis Center',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.979931, 104.764834],
+    popup='Evo Pet Shop Dempo - Palembang',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.975634, 104.766647],
+    popup='CGV',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.974424, 104.765263],
+    popup='Rajawali Grand Ballroom',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.970995, 104.764651],
+    popup='Grand Zuri Hotel',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.969013, 104.763621],
+    popup='RSIA Tiara Fatrin',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.966559, 104.765789],
+    popup='Catholic University Musi-Caritas',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.967320, 104.764249],
+    popup='SMA Xaverius 1',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.881205, 104.703606],
+    popup='Masjid Sulaiman Al-Quraida',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+folium.Marker(
+    location=[-2.882642, 104.703353],
+    popup='Farhan Kreasi Palembang',
+    icon=folium.Icon(icon='cloud')
+).add_to(d)
+d
+
+
+simpan(map_1,'4.html')
+simpan(c,'5.html')
+simpan(d,'6.html')

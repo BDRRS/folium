@@ -430,7 +430,7 @@ folium.Circle(
     radius=100,
     location=[-2.930442, 104.782428],
     popup='Seblak & Jasuke Mak Mega',
-    color='crimson',
+    color='blue',
     fill=False,
 ).add_to(c)
 c
